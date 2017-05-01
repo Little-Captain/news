@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCNewsViewController">
+            <connections>
+                <outlet property="contentScrollView" destination="ffd-EJ-AA2" id="hPu-H5-wx9"/>
+                <outlet property="titleScrollView" destination="AGk-fj-uNm" id="GXx-Iw-KKo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGk-fj-uNm">
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="cuD-ZZ-dbE"/>
+                    </constraints>
+                </scrollView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffd-EJ-AA2"/>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ffd-EJ-AA2" firstAttribute="top" secondItem="AGk-fj-uNm" secondAttribute="bottom" id="3nI-ae-tOe"/>
+                <constraint firstAttribute="bottom" secondItem="ffd-EJ-AA2" secondAttribute="bottom" constant="49" id="8QN-Hq-sZm"/>
+                <constraint firstItem="AGk-fj-uNm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ATR-d8-tLf"/>
+                <constraint firstItem="AGk-fj-uNm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LAf-hQ-Gz8"/>
+                <constraint firstAttribute="trailing" secondItem="ffd-EJ-AA2" secondAttribute="trailing" id="emo-pG-IJn"/>
+                <constraint firstItem="ffd-EJ-AA2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uQo-no-VPI"/>
+                <constraint firstAttribute="trailing" secondItem="AGk-fj-uNm" secondAttribute="trailing" id="xWD-Kl-LSG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

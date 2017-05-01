@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  01-第一个综合项目
+//
+//  Created by Liu-Mac on 12/11/2016.
+//  Copyright © 2016 Liu-Mac. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+// 公共头文件
+#import "UIImage+Tools.h"
+#import "UIView+Frame.h"
+#import "UIView+Bounds.h"
+#import "UIView+Center.h"
+#import "UIColor+Tools.h"
+#import "LCConst.h"
+
+#define ScreenW ([UIScreen mainScreen].bounds.size.width)
+#define ScreenH ([UIScreen mainScreen].bounds.size.height)
+#define ScreenB ([UIScreen mainScreen].bounds)
+#define KeyWindow ([UIApplication sharedApplication].keyWindow)
+
+#define LogHomeDirectory NSLog(@"%@", NSHomeDirectory())
+
+#endif
